@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exiled Eye</title>
+<style>
+  body {
+    background: radial-gradient(circle at top, #1a1a1a, #0a0a0a);
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 40px 15px;
+  }
+
+  .profile {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    margin: 10px 0 5px;
+    font-size: 1.8em;
+  }
+
+  p {
+    color: #aaa;
+    font-size: 0.95em;
+    margin-bottom: 0px;
+  }
+
+  .links {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .link-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .link {
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .link:hover {
+    background: linear-gradient(90deg, #4f46e5, #06b6d4);
+    transform: scale(1.135);
+  }
+
+  .link img {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+  }
+
+  .link-separator {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 25px 0 10px;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+  }
+
+  .projects {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .project {
+    background: #1d1d1d;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .project h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #06b6d4;
+  }
+
+  .project p {
+    color: #aaa;
+    font-size: 0.9em;
+  }
+
+  footer {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 60px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+  <div class="profile">
+    <img src="avatar.png" alt="Avatar" class="avatar">
+    <h1>Exiled Eye</h1>
+    <p>discord: exiled_eye</p>
+  </div>
+
+  <div class="links">
+    <div class="link-separator">Media Tracking</div>
+    <div class="link-row">
+      <a href="https://myanimelist.net/profile/Exiled_Eye" class="link">
+        <img src="https://icons.duckduckgo.com/ip3/myanimelist.net.ico" alt="MyAnimeList">
+        MyAnimeList
+      </a>
+      <a href="https://www.serializd.com/user/ExiledEye/profile" class="link">
+        <img src="https://favicon.pub/serializd.com" alt="Serializd">
+        Serializd
+      </a>
+    </div>
+    <div class="link-row">
+      <a href="https://letterboxd.com/Exiled_Eye/" class="link">
+        <img src="https://icons.duckduckgo.com/ip3/letterboxd.com.ico" alt="Letterboxd">
+        Letterboxd
+      </a>
+      <a href="https://backloggd.com/u/Exiled_Eye/" class="link">
+        <img src="https://icons.duckduckgo.com/ip3/backloggd.com.ico" alt="Backloggd">
+        Backloggd
+      </a>
+    </div>
+
+    <div class="link-separator">Videogames</div>
+    <div class="link-row">
+      <a href="https://steamcommunity.com/id/ExiledEye/" class="link">
+        <img src="https://icons.duckduckgo.com/ip3/steampowered.com.ico" alt="Steam Profile">
+        Steam Profile
+      </a>
+    </div>
+    <div class="link-row">
+      <a href="https://www.xbox.com/play/user/Exiled%20Eye2062" class="link">
+        <img src="https://icons.duckduckgo.com/ip3/xbox.com.ico" alt="Xbox Profile">
+        Xbox Profile
+      </a>
+      <a href="https://psnprofiles.com/Exiled_Eye" class="link">
+        <img src="https://icons.duckduckgo.com/ip3/playstation.com.ico" alt="PSN Profile">
+        PSN Profile
+      </a>      
+    </div>
+
+    <div class="link-separator">Development Platforms</div>
+    <div class="link-row">
+      <a href="https://github.com/ExiledEye" class="link">
+        <img src="https://icons.duckduckgo.com/ip3/github.com.ico" alt="GitHub">
+        GitHub
+      </a>
+      <a href="https://next.nexusmods.com/profile/ExiledEye" class="link">
+        <img src="https://icons.duckduckgo.com/ip3/nexusmods.com.ico" alt="Nexusmods">
+        Nexusmods
+      </a>
+    </div>
+  </div>
+
+  <div class="projects">
+    <a href=" " class="project">
+      <h3>Test 1</h3>
+      <p>Test 1.</p>
+    </a>
+
+    <a href=" " class="project">
+      <h3>Test 2</h3>
+      <p>Test 2.</p>
+    </a>
+
+    <a href=" " class="project">
+      <h3>Test 3</h3>
+      <p>Test 3</p>
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Exiled Eye — Built with ♥ on GitHub Pages
+  </footer>
+
+  <script>
+  document.querySelectorAll('a.link').forEach(a => {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener noreferrer');
+  });
+</script>
+
+</body>
+</html>
